@@ -1,6 +1,6 @@
 +++
 date = '2025-02-14T21:21:12+01:00'
-draft = true
+draft = false
 title = 'Dota 2: How Glimmer cape become new must-have item for tanks'
 summary = "_nothing_"
 +++

@@ -1,6 +1,6 @@
 +++
 date = '2025-02-14T21:21:21+01:00'
-draft = true
+draft = false
 title = 'Japanese learning in 2025'
 summary = "_nothing_"
 +++

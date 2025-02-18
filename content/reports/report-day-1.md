@@ -1,6 +1,6 @@
 +++
 date = '2025-02-15T20:20:35+01:00'
-draft = true
+draft = false
 title = 'Report Day 1'
 summary = 'first week'
 +++

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>ai and why it&#39;s bad for programming</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Back in 2018 when i tried programming for the first time&hellip;" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://vilgefortz.art/articles/ai-for-programming/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/footer.min.00981c614780ca3a539471743c9df059a7bcbdaf9c3bca6319f0ca000803a6b2.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/main.min.a9651d9fe180b3b37df94225ba5e76060bec0aac7ba365a8cf35e6bd7ec63505.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/style.min.cc349a25ee6f6bf6f9b46cb520214efe540984c61a4419599a7a40ae3784a82a.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/terminal.min.4b367d85d0d0061435650561285afed36c46a7cf8dc6d7ed5642d98e589fa622.css">
+
+  
+  <link rel="stylesheet" href="http://vilgefortz.art/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<link rel="shortcut icon" href="http://vilgefortz.art/favicon.png">
+<link rel="apple-touch-icon" href="http://vilgefortz.art/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="AI and why it&#39;s bad for Programming">
+<meta property="og:description" content="Back in 2018 when i tried programming for the first time&hellip;" />
+<meta property="og:url" content="http://vilgefortz.art/articles/ai-for-programming/" />
+<meta property="og:site_name" content="" />
+
+  <meta property="og:image" content="http://vilgefortz.art/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-02-15 15:55:12 &#43;0100 CET" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <div class="header__inner">
+  <div class="header__logo">
+    <a href="http://vilgefortz.art/">
+      <div class="logo">
+        home
+      </div>
+    </a>
+  </div>
+
+  
+  <nav class="header__nav">
+    <ul class="left-nav">
+      <li><a href="/articles" class="nav-button">Blog</a></li>
+    </ul>
+    <ul class="right-nav">
+      <li><a href="/reports" class="nav-button">Reports</a></li>
+    </ul>
+  </nav>
+
+  
+    <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/articles/">Blog</a></li>
+        
+      
+        
+          <li><a href="/reports/">Reports</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+  
+  
+</div>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/articles/">Blog</a></li>
+        
+      
+        
+          <li><a href="/reports/">Reports</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/articles/" >Blog</a></li>
+        
+      
+        
+          <li><a href="/reports/" >Reports</a></li>
+        
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  
+    <div class="header-image">
+      <img src="/images/649533.png" alt="Header Image" />
+    </div>
+  
+  
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://vilgefortz.art/articles/ai-for-programming/">AI and why it&rsquo;s bad for Programming</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-02-15</time><span class="post-reading-time">3 min read (594 words)</span></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>Back in 2018 when i tried programming for the first time i came to the conclusion that this field is really difficult. The first language with what i interacted was C++. Even basic &ldquo;Hello, world&rdquo; program was a nightmare to me. It all came at once &lsquo;cause as it was basicaly beggining. I needed to install all those IDE, look for explanation without knowing anything etc. And i needed to do it all by myself. Go through reddit posts, 4chan discussion and many youtube tutorials.</p>
+<p>All these things gave me basic knowledge. I discovered many programming languages for myself. But, eventually i stopped. It all was to much for me to handle.</p>
+<p>Then, in 2019 i gave a chance to the Python course in one of the universities in my city. It was pretty nice. But, i started focusing more on self-taughing. I bought some books, (f.e. <a href="https://www.goodreads.com/book/show/13221155-python-for-kids">Python for kids</a>) read many tutorials and explanations.</p>
+<p>I started to look over for some exercises. like, idk, text adventure:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;You&#39;re in the dungeon.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">What would you like to do?</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Go to the room and kill a dragon or try to open a chest?&#34;</span>)
+</span></span><span style="display:flex;"><span>choice <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;&gt; &#34;</span>)<span style="color:#f92672">.</span>lower()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;room&#34;</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;You&#39;ve entered the room and died.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;chest&#34;</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;You chose a chest.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">It has a lock of level 16. Would you like to throw a dice? (yes/no)&#34;</span>)
+</span></span><span style="display:flex;"><span>    dice_choice <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;&gt; &#34;</span>)<span style="color:#f92672">.</span>lower()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> dice_choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;yes&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">import</span> random
+</span></span><span style="display:flex;"><span>        roll <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">20</span>)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;You rolled a </span><span style="color:#e6db74">{</span>roll<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> roll <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">16</span>:
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;You successfully unlocked the chest!&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Failed to unlock the chest. Try again? (yes/no)&#34;</span>)
+</span></span><span style="display:flex;"><span>            retry <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;&gt; &#34;</span>)<span style="color:#f92672">.</span>lower()
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> retry <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;yes&#34;</span>:
+</span></span><span style="display:flex;"><span>                roll <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">20</span>)
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;You rolled a </span><span style="color:#e6db74">{</span>roll<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> roll <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">16</span>:
+</span></span><span style="display:flex;"><span>                    print(<span style="color:#e6db74">&#34;You successfully unlocked the chest!&#34;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                    print(<span style="color:#e6db74">&#34;Failed again. Better luck next time!&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Well, there&#39;s nothing else to do. You must open it! xD&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Well, there&#39;s nothing else to do. You must open it! xD&#34;</span>)<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>I still remember thise nights trying to figure out where is the bag. And i coded it all in pip. Not vs code, code blocks or other but pip. Its now im in love with Vim and Nano, but then a newbie who never learned programming should have tried to solve it all.</p>
+<p>It helped me.</p>
+<p>I spent 3 next years mastering python.</p>
+<p>Idk why but in 2022 i stopped. Perhaps just lost interest. Now thinking i&rsquo;d say i was an idiot.</p>
+<p>Then in november of 2022 OpenAI published ChatGPT 3. I was one of the first to register there. Apparently in the day one.</p>
+<p>Well, AI changed my life in the worst way. That time i was finishing high-school. I&rsquo;d say thankfully to ChatGPT, Notion and few other i stopped thinking and analysing and just uploaded everything there to explain as to idiot.</p>
+<p>In the end of 2024 i re-started my journey again. Currenly im learning few languages. Such as C, C++, C#, JS and Java. Also a bit of HTML. But my main ones are C and Java.</p>
+<p>Even after finishing CS50 and many other courses i still think im a begginer in many of them.</p>
+<p>That is where AI coming. Many students without understanding programming, or with lack of some concepts just upload their shit-code to LLM and just copy-paste corrected version without even reading changes. It stresses me out.</p>
+<p>I was just like it. Thank god i stopped.</p>
+<p>In the field of programming in would be better to read Stack Overflow, GitHub discussions and other resourses but now just Ctrl+C -&gt; Ctrl+V.</p>
+<p>If you do something like this, please <strong>stop</strong> and just learn.</p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+
+    <div class="about-me">
+      <p><a href="/aboutme/aboutme">About Me</a></p> 
+      <p>To contact me via email ---> olhnts12@proton.me</p> 
+    </div>
+
+    <div class="social-links">
+      
+        <a href="https://twitter.com/mhmrth1" target="_blank" class="social-link" title="Twitter">
+          <i class="fab fa-twitter"></i> 
+        </a>
+      
+        <a href="https://github.com/Krak9n" target="_blank" class="social-link" title="GitHub">
+          <i class="fab fa-github"></i> 
+        </a>
+      
+    </div>
+
+    <div class="copyright">
+      <p>© 2025 vilgefortz.art</p>
+    </div>
+
+  </div>
+</footer>
+
+  
+</div>
+
+</body>
+</html>
