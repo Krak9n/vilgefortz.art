@@ -7,33 +7,5 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Feb 2025 20:20:35 +0100</lastBuildDate><atom:link href="http://localhost:1313/reports/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Report Day 1</title>
-      <link>http://localhost:1313/reports/report-day-1/</link>
-      <pubDate>Sat, 15 Feb 2025 20:20:35 +0100</pubDate>
-      
-      <guid>http://localhost:1313/reports/report-day-1/</guid>
-      <description>first week</description>
-      <content>&lt;p&gt;yo. hello there.
-here i&amp;rsquo;ll show my ideas and what i&amp;rsquo;m gonna achive.&lt;/p&gt;
-&lt;p&gt;i&amp;rsquo;ll update it once for a week. probably every sunday.&lt;/p&gt;
-&lt;p&gt;Long-term goal:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Having a stable gamedev studio that makes few high quality games for few years.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Year 1 goals:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Finishing first game. Making prototype of the second game. Succesfully closing Kickstarter campaign for the second one.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Month 1 goals (February 2025):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Concept-arts for each character and location&lt;/li&gt;
-&lt;li&gt;Basic mechanics implementations&lt;/li&gt;
-&lt;li&gt;First playabale prototype&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;well, let&amp;rsquo;s get started ;)&lt;/p&gt;
-</content>
-    </item>
-    
   </channel>
 </rss>
