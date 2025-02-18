@@ -1,6 +1,6 @@
 +++
 date = '2025-02-14T21:21:00+01:00'
-draft = true
+draft = false
 title = 'Home'
 type = 'homepage'
 +++
