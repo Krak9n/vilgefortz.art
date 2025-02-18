@@ -2,7 +2,7 @@
 date = '2025-02-15T15:55:12+01:00'
 draft = false
 centerTheme = true
-headerImage = "http://vilgefortz.art/images/649533.png"
+headerImage = "/images/649533.png"
 title = "AI and why it's bad for Programming"
 summary = "_Back in 2018 when i tried programming for the first time..._"
 +++

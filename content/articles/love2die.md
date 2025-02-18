@@ -2,7 +2,7 @@
 date = '2025-02-14T18:56:19+01:00'
 draft = false
 centerTheme = true
-headerImage = "http://vilgefortz.art/images/649533.png"
+headerImage = "/images/649533.png"
 title = 'Love2die'
 summary = "_love2d is a framework..._"
 +++
