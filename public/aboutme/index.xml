@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aboutmes on </title>
-    <link>https://vilgefortz.art/aboutme/</link>
+    <link>http://localhost:1313/aboutme/</link>
     <description>Recent content in Aboutmes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Feb 2025 21:48:56 +0100</lastBuildDate><atom:link href="https://vilgefortz.art/aboutme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Feb 2025 21:48:56 +0100</lastBuildDate><atom:link href="http://localhost:1313/aboutme/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
