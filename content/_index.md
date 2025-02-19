@@ -14,5 +14,7 @@ here, on my blog u'll find my thoughts on things such as programming, D&D, video
 
 i hope we will find **our** language •⩊•
 
+To contact me via email ---> **olhnts12@proton.me**
+
 ![eva](/images/789101.jpg)
 
