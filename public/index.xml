@@ -2,141 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on </title>
-    <link>https://github.com/Krak9n/vilgefortz-rt/</link>
+    <link>/</link>
     <description>Recent content in Home on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 14 Feb 2025 21:21:00 +0100</lastBuildDate><atom:link href="https://github.com/Krak9n/vilgefortz-rt/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Feb 2025 20:20:35 +0100</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Report Day 1</title>
-      <link>https://github.com/Krak9n/vilgefortz-rt/reports/report-day-1/</link>
+      <link>/reports/report-day-1/</link>
       <pubDate>Sat, 15 Feb 2025 20:20:35 +0100</pubDate>
-      
-      <guid>https://github.com/Krak9n/vilgefortz-rt/reports/report-day-1/</guid>
+      <guid>/reports/report-day-1/</guid>
       <description>first week</description>
-      <content>&lt;p&gt;yo. hello there.
-here i&amp;rsquo;ll show my ideas and what i&amp;rsquo;m gonna achive.&lt;/p&gt;
-&lt;p&gt;i&amp;rsquo;ll update it once for a week. probably every sunday.&lt;/p&gt;
-&lt;p&gt;Long-term goal:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Having a stable gamedev studio that makes few high quality games for few years.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Year 1 goals:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Finishing first game. Making prototype of the second game. Succesfully closing Kickstarter campaign for the second one.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Month 1 goals (February 2025):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Concept-arts for each character and location&lt;/li&gt;
-&lt;li&gt;Basic mechanics implementations&lt;/li&gt;
-&lt;li&gt;First playabale prototype&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;well, let&amp;rsquo;s get started ;)&lt;/p&gt;
-</content>
     </item>
-    
     <item>
       <title>AI and why it&#39;s bad for Programming</title>
-      <link>https://github.com/Krak9n/vilgefortz-rt/articles/ai-for-programming/</link>
+      <link>/articles/ai-for-programming/</link>
       <pubDate>Sat, 15 Feb 2025 15:55:12 +0100</pubDate>
-      
-      <guid>https://github.com/Krak9n/vilgefortz-rt/articles/ai-for-programming/</guid>
+      <guid>/articles/ai-for-programming/</guid>
       <description>&lt;em&gt;Back in 2018 when i tried programming for the first time&amp;hellip;&lt;/em&gt;</description>
-      <content>&lt;p&gt;Back in 2018 when i tried programming for the first time i came to the conclusion that this field is really difficult. The first language with what i interacted was C++. Even basic &amp;ldquo;Hello, world&amp;rdquo; program was a nightmare to me. It all came at once &amp;lsquo;cause as it was basicaly beggining. I needed to install all those IDE, look for explanation without knowing anything etc. And i needed to do it all by myself. Go through reddit posts, 4chan discussion and many youtube tutorials.&lt;/p&gt;
-&lt;p&gt;All these things gave me basic knowledge. I discovered many programming languages for myself. But, eventually i stopped. It all was to much for me to handle.&lt;/p&gt;
-&lt;p&gt;Then, in 2019 i gave a chance to the Python course in one of the universities in my city. It was pretty nice. But, i started focusing more on self-taughing. I bought some books, (f.e. &lt;a href=&#34;https://www.goodreads.com/book/show/13221155-python-for-kids&#34;&gt;Python for kids&lt;/a&gt;) read many tutorials and explanations.&lt;/p&gt;
-&lt;p&gt;I started to look over for some exercises. like, idk, text adventure:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;You&amp;#39;re in the dungeon.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;What would you like to do?&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Go to the room and kill a dragon or try to open a chest?&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;choice &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; input(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;gt; &amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lower()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; choice &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;room&amp;#34;&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;You&amp;#39;ve entered the room and died.&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; choice &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;chest&amp;#34;&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;You chose a chest.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;It has a lock of level 16. Would you like to throw a dice? (yes/no)&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    dice_choice &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; input(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;gt; &amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lower()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; dice_choice &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yes&amp;#34;&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; random
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        roll &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; random&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;randint(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;You rolled a &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;roll&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; roll &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;You successfully unlocked the chest!&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Failed to unlock the chest. Try again? (yes/no)&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            retry &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; input(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;gt; &amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lower()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; retry &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yes&amp;#34;&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                roll &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; random&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;randint(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;You rolled a &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;roll&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; roll &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;You successfully unlocked the chest!&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Failed again. Better luck next time!&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Well, there&amp;#39;s nothing else to do. You must open it! xD&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Well, there&amp;#39;s nothing else to do. You must open it! xD&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I still remember thise nights trying to figure out where is the bag. And i coded it all in pip. Not vs code, code blocks or other but pip. Its now im in love with Vim and Nano, but then a newbie who never learned programming should have tried to solve it all.&lt;/p&gt;
-&lt;p&gt;It helped me.&lt;/p&gt;
-&lt;p&gt;I spent 3 next years mastering python.&lt;/p&gt;
-&lt;p&gt;Idk why but in 2022 i stopped. Perhaps just lost interest. Now thinking i&amp;rsquo;d say i was an idiot.&lt;/p&gt;
-&lt;p&gt;Then in november of 2022 OpenAI published ChatGPT 3. I was one of the first to register there. Apparently in the day one.&lt;/p&gt;
-&lt;p&gt;Well, AI changed my life in the worst way. That time i was finishing high-school. I&amp;rsquo;d say thankfully to ChatGPT, Notion and few other i stopped thinking and analysing and just uploaded everything there to explain as to idiot.&lt;/p&gt;
-&lt;p&gt;In the end of 2024 i re-started my journey again. Currenly im learning few languages. Such as C, C++, C#, JS and Java. Also a bit of HTML. But my main ones are C and Java.&lt;/p&gt;
-&lt;p&gt;Even after finishing CS50 and many other courses i still think im a begginer in many of them.&lt;/p&gt;
-&lt;p&gt;That is where AI coming. Many students without understanding programming, or with lack of some concepts just upload their shit-code to LLM and just copy-paste corrected version without even reading changes. It stresses me out.&lt;/p&gt;
-&lt;p&gt;I was just like it. Thank god i stopped.&lt;/p&gt;
-&lt;p&gt;In the field of programming in would be better to read Stack Overflow, GitHub discussions and other resourses but now just Ctrl+C -&amp;gt; Ctrl+V.&lt;/p&gt;
-&lt;p&gt;If you do something like this, please &lt;strong&gt;stop&lt;/strong&gt; and just learn.&lt;/p&gt;
-</content>
     </item>
-    
     <item>
       <title>About me</title>
-      <link>https://github.com/Krak9n/vilgefortz-rt/aboutme/aboutme/</link>
+      <link>/aboutme/aboutme/</link>
       <pubDate>Fri, 14 Feb 2025 21:48:56 +0100</pubDate>
-      
-      <guid>https://github.com/Krak9n/vilgefortz-rt/aboutme/aboutme/</guid>
+      <guid>/aboutme/aboutme/</guid>
       <description>&lt;em&gt;nothing&lt;/em&gt;</description>
-      <content>&lt;p&gt;&lt;strong&gt;hello there&lt;/strong&gt;&lt;/p&gt;
-</content>
     </item>
-    
     <item>
       <title>Japanese learning in 2025</title>
-      <link>https://github.com/Krak9n/vilgefortz-rt/articles/japaneselearning/</link>
+      <link>/articles/japaneselearning/</link>
       <pubDate>Fri, 14 Feb 2025 21:21:21 +0100</pubDate>
-      
-      <guid>https://github.com/Krak9n/vilgefortz-rt/articles/japaneselearning/</guid>
+      <guid>/articles/japaneselearning/</guid>
       <description>&lt;em&gt;nothing&lt;/em&gt;</description>
-      <content>&lt;p&gt;&lt;strong&gt;comming soon&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/1137520.jpg&#34; alt=&#34;malenia&#34;&gt;&lt;/p&gt;
-</content>
     </item>
-    
     <item>
       <title>Dota 2: How Glimmer cape become new must-have item for tanks</title>
-      <link>https://github.com/Krak9n/vilgefortz-rt/articles/dota2glimmerbkb/</link>
+      <link>/articles/dota2glimmerbkb/</link>
       <pubDate>Fri, 14 Feb 2025 21:21:12 +0100</pubDate>
-      
-      <guid>https://github.com/Krak9n/vilgefortz-rt/articles/dota2glimmerbkb/</guid>
+      <guid>/articles/dota2glimmerbkb/</guid>
       <description>&lt;em&gt;nothing&lt;/em&gt;</description>
-      <content>&lt;p&gt;&lt;strong&gt;comming soon&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/1137520.jpg&#34; alt=&#34;malenia&#34;&gt;&lt;/p&gt;
-</content>
     </item>
-    
     <item>
       <title>Love2die</title>
-      <link>https://github.com/Krak9n/vilgefortz-rt/articles/love2die/</link>
+      <link>/articles/love2die/</link>
       <pubDate>Fri, 14 Feb 2025 18:56:19 +0100</pubDate>
-      
-      <guid>https://github.com/Krak9n/vilgefortz-rt/articles/love2die/</guid>
+      <guid>/articles/love2die/</guid>
       <description>&lt;em&gt;love2d is a framework&amp;hellip;&lt;/em&gt;</description>
-      <content>&lt;p&gt;&lt;img src=&#34;./images/849764.jpg&#34; alt=&#34;here we go again&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;am i the only one here?&lt;/strong&gt;&lt;/p&gt;
-</content>
     </item>
-    
   </channel>
 </rss>

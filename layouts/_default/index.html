@@ -1,0 +1,113 @@
+{{ define "main" }}
+  {{ if .Content }}
+    <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
+      {{ .Content }}
+    </div>
+  {{ end }}
+
+  <!-- Recent Posts Section -->
+  <section class="recent-posts">
+    <h2>Recent Posts</h2>
+    <ul>
+      {{ range first 5 (where .Site.RegularPages ".Section" "articles") }} <!-- Fetching only from 'posts' folder -->
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "Jan 2, 2006" }}
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  <!-- End of Recent Posts Section -->
+
+  <!-- Reports Section -->
+  <section class="reports">
+    <h2>Reports</h2>
+    <ul>
+      {{ range first 5 (where .Site.RegularPages ".Section" "reports") }} <!-- Fetching only from 'reports' folder -->
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "Jan 2, 2006" }}
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  <!-- End of Reports Section -->
+
+  <!-- About Me Section at the Bottom -->
+
+  <!-- End of About Me Section -->
+
+  <div class="posts">
+    {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
+    {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+
+    {{ $PageContext := . }}
+    {{ if .IsHome }}
+      {{ $PageContext = .Site }}
+    {{ end }}
+    {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
+
+    {{ range $paginator.Pages }}
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+        </h2>
+
+        <div class="post-meta">
+          {{- if .Date -}}
+            <time class="post-date">
+              {{- partial "post-date" . -}}
+            </time>
+          {{- end -}}
+          {{- with .Params.Author -}}
+            <span class="post-author">{{ . }}</span>
+          {{- end -}}
+
+          <!-- Custom Reading Time Logic -->
+          {{ $wordCount := countwords .Content }}
+          {{ $readingSpeed := default 200 .Site.Params.read_speed }}  <!-- Default 200 words per minute -->
+          {{ $readTime := div $wordCount $readingSpeed }}
+          {{ $readTime = math.Ceil $readTime }}  <!-- Round up the time to the next minute -->
+
+          {{ if gt $readTime 1 }}
+            {{ .Scratch.Set "readingTime" "minutes" }}
+          {{ else }}
+            {{ .Scratch.Set "readingTime" "minute" }}
+          {{ end }}
+
+          <span class="read-time">
+            📖 {{ $readTime }} {{ .Scratch.Get "readingTime" }} read
+          </span>
+        </div>
+
+        {{ if .Params.tags }}
+          <span class="post-tags">
+            {{ range .Params.tags }}
+            #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+              {{- . -}}
+            </a>&nbsp;
+            {{ end }}
+          </span>
+        {{ end }}
+
+        {{ partial "cover.html" . }}
+
+        <div class="post-content">
+          {{ if .Params.showFullContent }}
+            {{ .Content }}
+          {{ else if .Description }}
+            <p>{{ .Description | markdownify }}</p>
+          {{ else }}
+            {{ .Summary }}
+          {{ end }}
+        </div>
+
+        {{ if not .Params.showFullContent }}
+          <div>
+            <a class="read-more button inline" href="{{ .RelPermalink }}">{{ $.Site.Params.ReadMore }}</a>
+          </div>
+        {{ end }}
+      </article>
+    {{ end }}
+
+    {{ partial "pagination.html" . }}
+  </div>
+{{ end }}

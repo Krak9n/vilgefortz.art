@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <section class="home-section">
+    <h1>Blog</h1>
+
+    <div class="posts">
+      {{ range where .Site.Pages "Section" "articles" }} <!-- Loop through all pages in the 'articles' section -->
+        <article>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <div class="post-meta">
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+            <span class="tags">
+              {{ range .Params.tags }}
+                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+            </span>
+          </div>
+          <!-- Show the summary of the post -->
+          <div class="post-summary">
+            {{ .Summary }}
+          </div>
+          <!-- Show a "read more" link to view the full post -->
+          <p><a href="{{ .RelPermalink }}" class="read-more">Read more...</a></p>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

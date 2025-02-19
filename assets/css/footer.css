@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically */
+  align-items: center;     /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding: 20px;
+  text-align: center;      /* Center text */
+}
+
+.footer .footer__inner {
+  width: 100%;             /* Ensure full width for inner content */
+}
+
+.footer .about-me {
+  margin-bottom: 20px;     /* Space below "About Me" section */
+}
+
+.footer .social-links {          /* Updated class name from .social-links to .social-links
+ */
+  display: flex;
+  justify-content: center;  /* Center the links horizontally */
+  margin-top: 10px;        /* Space above social links */
+}
+
+.footer .social-links a {       /* Updated selector */
+  margin: 0 15px;          /* Space between social links */
+  color: #fff;             /* Text color */
+  font-size: 20px;         /* Icon size */
+  text-decoration: none;
+}
+
+.footer .social-links a:hover {  /* Updated selector */
+  color: #4CAF50;           /* Hover color */
+}
+
+.footer .social-links i {       /* Updated selector */
+  margin-right: 8px;       /* Space between icon and text */
+}

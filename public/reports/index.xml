@@ -2,38 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reports on </title>
-    <link>https://github.com/Krak9n/vilgefortz-rt/reports/</link>
+    <link>/reports/</link>
     <description>Recent content in Reports on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 15 Feb 2025 20:20:35 +0100</lastBuildDate><atom:link href="https://github.com/Krak9n/vilgefortz-rt/reports/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Feb 2025 20:20:35 +0100</lastBuildDate>
+    <atom:link href="/reports/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Report Day 1</title>
-      <link>https://github.com/Krak9n/vilgefortz-rt/reports/report-day-1/</link>
+      <link>/reports/report-day-1/</link>
       <pubDate>Sat, 15 Feb 2025 20:20:35 +0100</pubDate>
-      
-      <guid>https://github.com/Krak9n/vilgefortz-rt/reports/report-day-1/</guid>
+      <guid>/reports/report-day-1/</guid>
       <description>first week</description>
-      <content>&lt;p&gt;yo. hello there.
-here i&amp;rsquo;ll show my ideas and what i&amp;rsquo;m gonna achive.&lt;/p&gt;
-&lt;p&gt;i&amp;rsquo;ll update it once for a week. probably every sunday.&lt;/p&gt;
-&lt;p&gt;Long-term goal:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Having a stable gamedev studio that makes few high quality games for few years.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Year 1 goals:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Finishing first game. Making prototype of the second game. Succesfully closing Kickstarter campaign for the second one.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Month 1 goals (February 2025):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Concept-arts for each character and location&lt;/li&gt;
-&lt;li&gt;Basic mechanics implementations&lt;/li&gt;
-&lt;li&gt;First playabale prototype&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;well, let&amp;rsquo;s get started ;)&lt;/p&gt;
-</content>
     </item>
-    
   </channel>
 </rss>

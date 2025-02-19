@@ -1,0 +1,28 @@
+logo.html
+
+<div class="header__inner">
+  <div class="header__logo">
+    <a href="{{ if $.Site.Params.Logo.LogoHomeLink }}{{ $.Site.Params.Logo.LogoHomeLink }}{{else}}{{ $.Site.BaseURL }}{{ end }}">
+      <div class="logo">
+        {{ with $.Site.Params.Logo.logoText }}{{ . }}{{ else }}home{{ end }}
+      </div>
+    </a>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <nav class="header__nav">
+    <ul class="left-nav">
+      <li><a href="{{ "/articles" | relURL }}" class="nav-button">Blog</a></li>
+    </ul>
+    <ul class="right-nav">
+      <li><a href="{{ "/reports" | relURL }}" class="nav-button">Reports</a></li>
+    </ul>
+  </nav>
+
+  {{ if len $.Site.Menus }}
+    {{ partial "mobile-menu.html" . }}
+  {{ end }}
+  {{ if and $.Site.Params.showLanguageSelector (len $.Site.Home.AllTranslations) }}
+    {{ partial "language-menu.html" . }}
+  {{ end }}
+</div>

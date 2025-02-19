@@ -1,62 +1,24 @@
-# General configuration
-languageCode = "en-us"
-baseURL = "https://github.com/Krak9n/vilgefortz-rt/"
-theme = "terminal"
-relativeURLs = true
-canonifyURLs = true
-
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.90.0"
+    min = '0.90.0'
 
-# Params section for additional settings
 [params]
   centerTheme = true
   custom_css = ["css/style.css"]
   readingTime = true
   summaryLength = 70
+  social-links = [
+    { name = "Twitter", url = "https://twitter.com/mhmrth1" },
+    { name = "GitHub", url = "https://github.com/Krak9n" }
+  ]
   integrity = ""
-  framed = false
-  read_speed = 200  # Default reading speed in words per minute
-  contentTypeName = "posts"  # Default content type
-  ReadMore = "Read More"  # Text for "Read More" link
 
-  [[params.social-links]]
-    name = "Twitter"
-    url = "https://twitter.com/mhmrth1"
 
-  [[params.social-links]]
-    name = "GitHub"
-    url = "https://github.com/Krak9n"
 
-  # Footer content
-  footerText = "© 2025 vilgefortz.art – All rights reserved. Made with ❤️ and a bit of chaos."
-  aboutMeLink = "/aboutme/aboutme"
+baseURL = "http://vilgefortz.art/"
+theme = "terminal"
+relativeURLs = true
+canonifyURLs = true
 
-# Menu configuration (optional)
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
 
-[[menu.main]]
-  name = "Articles"
-  url = "/articles/"
-  weight = 2
-
-[[menu.main]]
-  name = "Reports"
-  url = "/reports/"
-  weight = 3
-
-# Enable pagination for content types
-[permalinks]
-  posts = "/articles/:slug/"
-  reports = "/reports/:slug/"
-  
-# Output formats (optional)
-[outputFormats]
-  [outputFormats.HTML]
-    mediaType = "text/html"
-    baseName = "index"
