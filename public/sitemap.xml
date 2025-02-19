@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/reports/report-day-1/</loc>
+    <loc>http://vilgefortz.art/reports/report-day-1/</loc>
     <lastmod>2025-02-15T20:20:35+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/reports/</loc>
+    <loc>http://vilgefortz.art/reports/</loc>
     <lastmod>2025-02-15T20:20:35+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/ai-for-programming/</loc>
+    <loc>http://vilgefortz.art/articles/ai-for-programming/</loc>
     <lastmod>2025-02-15T15:55:12+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/</loc>
+    <loc>http://vilgefortz.art/articles/</loc>
     <lastmod>2025-02-15T15:55:12+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/aboutme/aboutme/</loc>
+    <loc>http://vilgefortz.art/aboutme/aboutme/</loc>
     <lastmod>2025-02-14T21:48:56+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/aboutme/</loc>
+    <loc>http://vilgefortz.art/aboutme/</loc>
     <lastmod>2025-02-14T21:48:56+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/japaneselearning/</loc>
+    <loc>http://vilgefortz.art/articles/japaneselearning/</loc>
     <lastmod>2025-02-14T21:21:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/dota2glimmerbkb/</loc>
+    <loc>http://vilgefortz.art/articles/dota2glimmerbkb/</loc>
     <lastmod>2025-02-14T21:21:12+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://vilgefortz.art/</loc>
     <lastmod>2025-02-14T21:21:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/love2die/</loc>
+    <loc>http://vilgefortz.art/articles/love2die/</loc>
     <lastmod>2025-02-14T18:56:19+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://vilgefortz.art/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://vilgefortz.art/tags/</loc>
   </url>
 </urlset>
