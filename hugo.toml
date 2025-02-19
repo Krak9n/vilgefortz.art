@@ -13,10 +13,11 @@
     { name = "GitHub", url = "https://github.com/Krak9n" }
   ]
   integrity = ""
+  buildDrafts = true
 
 
 
-baseURL = "http://vilgefortz.art/"
+baseURL = "https://vilgefortz.art/"
 theme = "terminal"
 relativeURLs = true
 canonifyURLs = true

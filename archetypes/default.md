@@ -1,6 +1,5 @@
 +++
 date = '{{ .Date }}'
-draft = true
-headerImage = "/images/649533.png"
+draft = false
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 +++
