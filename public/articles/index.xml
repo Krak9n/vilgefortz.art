@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on </title>
-    <link>http://vilgefortz.art/articles/</link>
+    <link>https://github.com/Krak9n/vilgefortz-rt/articles/</link>
     <description>Recent content in Articles on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Feb 2025 15:55:12 +0100</lastBuildDate><atom:link href="http://vilgefortz.art/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 15:55:12 +0100</lastBuildDate><atom:link href="https://github.com/Krak9n/vilgefortz-rt/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI and why it&#39;s bad for Programming</title>
-      <link>http://vilgefortz.art/articles/ai-for-programming/</link>
+      <link>https://github.com/Krak9n/vilgefortz-rt/articles/ai-for-programming/</link>
       <pubDate>Sat, 15 Feb 2025 15:55:12 +0100</pubDate>
       
-      <guid>http://vilgefortz.art/articles/ai-for-programming/</guid>
+      <guid>https://github.com/Krak9n/vilgefortz-rt/articles/ai-for-programming/</guid>
       <description>&lt;em&gt;Back in 2018 when i tried programming for the first time&amp;hellip;&lt;/em&gt;</description>
       <content>&lt;p&gt;Back in 2018 when i tried programming for the first time i came to the conclusion that this field is really difficult. The first language with what i interacted was C++. Even basic &amp;ldquo;Hello, world&amp;rdquo; program was a nightmare to me. It all came at once &amp;lsquo;cause as it was basicaly beggining. I needed to install all those IDE, look for explanation without knowing anything etc. And i needed to do it all by myself. Go through reddit posts, 4chan discussion and many youtube tutorials.&lt;/p&gt;
 &lt;p&gt;All these things gave me basic knowledge. I discovered many programming languages for myself. But, eventually i stopped. It all was to much for me to handle.&lt;/p&gt;
@@ -65,36 +65,36 @@
     
     <item>
       <title>Japanese learning in 2025</title>
-      <link>http://vilgefortz.art/articles/japaneselearning/</link>
+      <link>https://github.com/Krak9n/vilgefortz-rt/articles/japaneselearning/</link>
       <pubDate>Fri, 14 Feb 2025 21:21:21 +0100</pubDate>
       
-      <guid>http://vilgefortz.art/articles/japaneselearning/</guid>
+      <guid>https://github.com/Krak9n/vilgefortz-rt/articles/japaneselearning/</guid>
       <description>&lt;em&gt;nothing&lt;/em&gt;</description>
       <content>&lt;p&gt;&lt;strong&gt;comming soon&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://vilgefortz.art/images/1137520.jpg&#34; alt=&#34;malenia&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/1137520.jpg&#34; alt=&#34;malenia&#34;&gt;&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>Dota 2: How Glimmer cape become new must-have item for tanks</title>
-      <link>http://vilgefortz.art/articles/dota2glimmerbkb/</link>
+      <link>https://github.com/Krak9n/vilgefortz-rt/articles/dota2glimmerbkb/</link>
       <pubDate>Fri, 14 Feb 2025 21:21:12 +0100</pubDate>
       
-      <guid>http://vilgefortz.art/articles/dota2glimmerbkb/</guid>
+      <guid>https://github.com/Krak9n/vilgefortz-rt/articles/dota2glimmerbkb/</guid>
       <description>&lt;em&gt;nothing&lt;/em&gt;</description>
       <content>&lt;p&gt;&lt;strong&gt;comming soon&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://vilgefortz.art/images/1137520.jpg&#34; alt=&#34;malenia&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/1137520.jpg&#34; alt=&#34;malenia&#34;&gt;&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>Love2die</title>
-      <link>http://vilgefortz.art/articles/love2die/</link>
+      <link>https://github.com/Krak9n/vilgefortz-rt/articles/love2die/</link>
       <pubDate>Fri, 14 Feb 2025 18:56:19 +0100</pubDate>
       
-      <guid>http://vilgefortz.art/articles/love2die/</guid>
+      <guid>https://github.com/Krak9n/vilgefortz-rt/articles/love2die/</guid>
       <description>&lt;em&gt;love2d is a framework&amp;hellip;&lt;/em&gt;</description>
-      <content>&lt;p&gt;&lt;img src=&#34;http://vilgefortz.art/images/849764.jpg&#34; alt=&#34;here we go again&#34;&gt;&lt;/p&gt;
+      <content>&lt;p&gt;&lt;img src=&#34;../images/849764.jpg&#34; alt=&#34;here we go again&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;am i the only one here?&lt;/strong&gt;&lt;/p&gt;
 </content>
     </item>
