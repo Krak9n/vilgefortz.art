@@ -30,6 +30,10 @@ canonifyURLs = true
     name = "GitHub"
     url = "https://github.com/Krak9n"
 
+  # Footer content
+  footerText = "© 2025 vilgefortz.art – All rights reserved. Made with ❤️ and a bit of chaos."
+  aboutMeLink = "/aboutme/aboutme"
+
 # Menu configuration (optional)
 [[menu.main]]
   name = "Home"
