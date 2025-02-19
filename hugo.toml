@@ -1,28 +1,25 @@
-languageCode = 'en-us'
-theme = 'terminal'
-baseURL = "http://vilgefortz.art/"
+languageCode = "en-us"
+baseURL = "https://vilgefortz.art/"
+theme = "terminal"
+relativeURLs = true
+canonifyURLs = true
 
 [module]
   [module.hugoVersion]
     extended = true
-    min = '0.90.0'
+    min = "0.90.0"
 
 [params]
   centerTheme = true
   custom_css = ["css/style.css"]
   readingTime = true
   summaryLength = 70
-  social-links = [
-    { name = "Twitter", url = "https://twitter.com/mhmrth1" },
-    { name = "GitHub", url = "https://github.com/Krak9n" }
-  ]
   integrity = ""
 
+  [[params.social-links]]
+    name = "Twitter"
+    url = "https://twitter.com/mhmrth1"
 
-
-baseURL = "https://vilgefortz.art/"
-theme = "hugo-theme-terminal"
-relativeURLs = true
-canonifyURLs = true
-
-
+  [[params.social-links]]
+    name = "GitHub"
+    url = "https://github.com/Krak9n"
