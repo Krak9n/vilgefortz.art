@@ -33,4 +33,4 @@ My main hobbies:
 
 Not sure how you see me after reading all this, but hey—thanks for stopping by!
 
-Link to -> ![Home](/_index.md) <-
+Link to -> [Home](/_index.md) <-
