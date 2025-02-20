@@ -5,14 +5,13 @@ title = 'Home'
 type = 'homepage'
 +++
 
-hi there? 
+hi there?
 
-if u re here it means that u re probably interested in me? how would u even find me if not so...
+if you’re here, it probably means you’re interested in me-how else would you have found me…
 
-anyway, im a **simple** dude that have interest in many things. preferable i could be everything for ya, talk on any topic etc. 
-here, on my blog u'll find my thoughts on things such as programming, D&D, videogames nd industry, music, politics and many many other. 
+anyway, i’m just a **simple** dude with way too many interests. ideally, i could be anything for ya-chat about any topic, whatever. here, on my blog, you’ll find my thoughts on programming, D&D, video games & the industry, music, politics, and a whole lot more.
 
-i hope we will find **our** language •⩊•
+hope we’ll find **our** language •⩊•
 
 To contact me via email ---> **olhnts12@proton.me**
 
