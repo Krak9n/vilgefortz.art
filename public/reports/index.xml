@@ -6,8 +6,15 @@
     <description>Recent content in Reports on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Feb 2025 20:20:35 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2025 16:25:53 +0100</lastBuildDate>
     <atom:link href="/reports/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report_day_2 9</title>
+      <link>/reports/report_day_2-9/</link>
+      <pubDate>Mon, 24 Feb 2025 16:25:53 +0100</pubDate>
+      <guid>/reports/report_day_2-9/</guid>
+      <description>&lt;h2 id=&#34;report-day-2-9&#34;&gt;Report: Day 2-9&lt;/h2&gt;&#xA;&lt;p&gt;This week, I barely got anything done. I had big plans—wanted to make progress on my game, add new mechanics, or at least study Japanese—but none of it happened.&lt;/p&gt;&#xA;&lt;p&gt;Most of my time went into fixing an issue on my Arch Linux. On boot, I kept getting the error:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Failed to start Nvidia-Persistenced Daemon.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This also caused Xorg to break. I tried everything—reinstalling &lt;strong&gt;nvidia-utils&lt;/strong&gt;, &lt;strong&gt;nvidia-settings&lt;/strong&gt;, switching kernels—but nothing worked. The only real fix I found was reinstalling the &lt;strong&gt;linux-lts&lt;/strong&gt; kernel, which turned out to be slightly mismatched in version. After that, everything was back to normal. A small win, but it cost me too much time.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Report Day 1</title>
       <link>/reports/report-day-1/</link>

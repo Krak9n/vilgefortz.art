@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/reports/report-day-1/</loc>
-    <lastmod>2025-02-15T20:20:35+01:00</lastmod>
+    <loc>/reports/report_day_2-9/</loc>
+    <lastmod>2025-02-24T16:25:53+01:00</lastmod>
   </url><url>
     <loc>/reports/</loc>
+    <lastmod>2025-02-24T16:25:53+01:00</lastmod>
+  </url><url>
+    <loc>/reports/report-day-1/</loc>
     <lastmod>2025-02-15T20:20:35+01:00</lastmod>
   </url><url>
     <loc>/articles/ai-for-programming/</loc>
