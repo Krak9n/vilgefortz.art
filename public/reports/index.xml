@@ -13,21 +13,21 @@
       <link>/reports/report_day_10-12/</link>
       <pubDate>Wed, 26 Feb 2025 18:57:38 +0100</pubDate>
       <guid>/reports/report_day_10-12/</guid>
-      <description>&lt;h1 id=&#34;report-on-nothing&#34;&gt;Report on nothing&lt;/h1&gt;&#xA;&lt;p&gt;By these two days, i have done almost nothing. Keep trying to get used to LOVE2D and C++. Also I&amp;rsquo;m currently trying to find experience in industry.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m also have started working on small VisualNovel on Ren&amp;rsquo;Py. In few weeks i hope i&amp;rsquo;ll finish it. Currently just finished main concept and script.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;base of LOVE2D&amp;amp;LUA passed&lt;/li&gt;&#xA;&lt;li&gt;some basics of Krita learned&lt;/li&gt;&#xA;&lt;li&gt;Reaper staff reminded :)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;the one:&lt;/p&gt;</description>
+      <description>&lt;em&gt;By these two days, i have done almost&lt;/em&gt;</description>
     </item>
     <item>
       <title>Report Day 2-9</title>
       <link>/reports/report_day_2-9/</link>
       <pubDate>Mon, 24 Feb 2025 16:25:53 +0100</pubDate>
       <guid>/reports/report_day_2-9/</guid>
-      <description>&lt;h2 id=&#34;report-day-2-9&#34;&gt;Report: Day 2-9&lt;/h2&gt;&#xA;&lt;p&gt;This week, I barely got anything done. I had big plans—wanted to make progress on my game, add new mechanics, or at least study Japanese—but none of it happened.&lt;/p&gt;&#xA;&lt;p&gt;Most of my time went into fixing an issue on my Arch Linux. On boot, I kept getting the error:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Failed to start Nvidia-Persistenced Daemon.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This also caused Xorg to break. I tried everything—reinstalling &lt;strong&gt;nvidia-utils&lt;/strong&gt;, &lt;strong&gt;nvidia-settings&lt;/strong&gt;, switching kernels—but nothing worked. The only real fix I found was reinstalling the &lt;strong&gt;linux-lts&lt;/strong&gt; kernel, which turned out to be slightly mismatched in version. After that, everything was back to normal. A small win, but it cost me too much time.&lt;/p&gt;</description>
+      <description>&lt;em&gt;This week, I barely got&lt;/em&gt;</description>
     </item>
     <item>
       <title>Report Day 1</title>
       <link>/reports/report-day-1/</link>
       <pubDate>Sat, 15 Feb 2025 20:20:35 +0100</pubDate>
       <guid>/reports/report-day-1/</guid>
-      <description>first week</description>
+      <description>&lt;em&gt;first week&lt;/em&gt;</description>
     </item>
   </channel>
 </rss>

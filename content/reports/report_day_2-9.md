@@ -2,6 +2,7 @@
 date = '2025-02-24T16:25:53+01:00'
 draft = false
 title = 'Report Day 2-9'
+summary = '_This week, I barely got_'
 +++
 
 ## Report: Day 2-9

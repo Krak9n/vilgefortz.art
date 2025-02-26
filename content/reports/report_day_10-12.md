@@ -2,6 +2,7 @@
 date = '2025-02-26T18:57:38+01:00'
 draft = false
 title = 'Report Day 10-12'
+summary = '_By these two days, i have done almost_'
 +++
 
 # Report on nothing
@@ -16,4 +17,4 @@ I'm also have started working on small VisualNovel on Ren'Py. In few weeks i hop
 
 the one:
 
-https://x.com/mhmrth1/status/1894113541927338101
+[here](https://x.com/mhmrth1/status/1894113541927338101)
