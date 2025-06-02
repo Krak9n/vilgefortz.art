@@ -1,7 +1,7 @@
 +++
 date = '2025-06-02T15:35:19+02:00'
 draft = false
-title = 'Report_day_15 93'
+title = 'Report Day 15-93'
 summary = '_Almost two months are gone_'
 +++
 
