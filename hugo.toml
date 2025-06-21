@@ -4,6 +4,7 @@
     min = '0.90.0'
 
 [params]
+  show_related = true
   centerTheme = true
   custom_css = ["css/style.css"]
   readingTime = true
