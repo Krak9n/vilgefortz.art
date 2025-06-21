@@ -20,8 +20,8 @@ In first few days i was able to firstly produce a black window and then getting 
 
 Have to admit i am pretty proud of them. 
 
-{{< spoiler text="My current code looks like this" >}}
-``` c
+My current code looks like this: 
+```c
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
@@ -483,7 +483,7 @@ void printMap()
 }
 
 ```
-{{< /spoiler >}}
+
 
 I know that's a lot. I'll probably have to divide it into files.
 Few things that this awful piece of graphics does:
