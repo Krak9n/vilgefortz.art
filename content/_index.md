@@ -14,6 +14,7 @@ anyway, i’m just a **simple** dude with way too many interests. ideally, i cou
 hope we’ll find **our** language •⩊•
 
 To contact me via email ---> **olhnts12@proton.me**
+---
 Or my discord ---> **xezbeth45**
 
 ![eva](/images/789101.jpg)
