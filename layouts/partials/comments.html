@@ -6,3 +6,102 @@ Hugo directory and insert:
 
 or whatever comment engine you want -> https://gohugo.io/content-management/comments/#readout
 -->
+<div id="comments-container">
+    <!-- javascript will add comments here. loaded from backend and/or submitted successfully -->
+</div>
+
+<h3>Add comment</h3>
+<form id="new-comment-form" action="{{.Site.Params.commentServer}}">
+    <input type="hidden" name="post" value="{{ .File.BaseFileName }}">
+    <br/><input type="text" name="name" placeholder="Name (required)" required/>
+    <br/><input type="email" name="email" placeholder="Email address (required. hashed and used for Gravatar only)" required/>
+    <br/><textarea rows="10" name="message" placeholder="Comment (required)" required></textarea>
+    <button id="new-comment-submit" class="btn-ready" type="submit" value="Send">Submit</button>
+</form>
+
+<template id="comment-template">
+    <article id="comment" class="comment">
+        <img class="commentAvatar" src="https://www.gravatar.com/avatar/@hash?d=mm&s=80">
+        <div class="commentRight">
+            <p class="commentAuthor"><a href="@url" class="commentAuthor">@name</a></p>
+            <time class="entry-date" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">@date</time>
+            <div class="commentMessage">@message</div>
+        </div>
+    </article>
+</template>
+    
+<script language="javascript">
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    // from https://stackoverflow.com/questions/9899372/vanilla-javascript-equivalent-of-jquerys-ready-how-to-call-a-function-whe
+    function domReady(fn) {
+        if (document.readyState === "complete" || document.readyState === "interactive") {
+            setTimeout(fn, 1);
+        } else {
+            document.addEventListener("DOMContentLoaded", fn);
+        }
+    } 
+    
+    var addComment = function (data) {
+        console.log("adding comment", data);
+        const container = document.getElementById("comments-container");
+        const template = document.getElementById('comment-template');
+
+        var txt = template.innerHTML;
+        var d = new Date(data.Ts);
+        var date = d.getDate() + " " + monthNames[d.getMonth()] + ", " + d.getFullYear() + " at " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        txt = txt.replace('@hash', data.Hash)
+                  .replace('@date', date)
+                  .replace('@name', data.Author)
+                  .replace('@message', data.Message)
+        let temp = document.createElement('template');
+        temp.innerHTML = txt;
+        container.appendChild(temp.content.firstElementChild);
+    };
+
+    domReady(async function() {
+        let form = document.getElementById("new-comment-form");
+        let commentsUrl = "{{.Site.Params.commentServer}}/{{ .File.BaseFileName }}";
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            sendData();
+         });
+
+        const response = await fetch(commentsUrl);
+         if (response.ok) {
+            comments = await response.json();
+            comments.forEach(addComment);
+         } else {
+            e = "<div><b>Could not load comments</b></br>" + status + " " + err +
+                "<br/>Disabling commenting feature";
+            form.parentNode.insertBefore(document.createElement(e), form);
+            form.display = "none";
+        }
+
+         async function sendData() {
+            document.querySelector('#new-comment-submit').textContent = 'Sending....';
+            const formData = new FormData(form);
+            try {
+                const response = await fetch(commentsUrl, {
+                    method: "POST",
+                    body: formData,
+                });
+                button = document.querySelector('#new-comment-submit');
+                if (response.ok) {
+                    button.textContent = 'Sent!';
+                    button.className = 'btn-ok';
+                    comment = await response.json();
+                    addComment(comment);
+                } else {
+                    button.className = 'btn-err';
+                    const message = await response.text();
+                    button.textContent = 'failed with status ' + response.status + ' ' + message;
+                }
+            } catch (e) {
+                button.textcontent = 'failed with error ' + e;
+                console.error(e);
+            }
+        }
+   });
+    </script>
