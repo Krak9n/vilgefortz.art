@@ -49,7 +49,9 @@
   {{ if eq .Type $.Site.Params.contentTypeName }}
     {{ partial "posts_pagination.html" . }}
   {{ end }}
-  
-  {{< chat cactus-comments >}}
+
+  {{ if not (.Params.hideComments | default false) }}
+    {{ partial "comments.html" . }}
+  {{ end }}
 </article>
 {{ end }}
