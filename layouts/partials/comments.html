@@ -15,6 +15,7 @@ or whatever comment engine you want -> https://gohugo.io/content-management/comm
     <input type="hidden" name="post" value="{{ .File.BaseFileName }}">
     <br/><input type="text" name="name" placeholder="Name (required)" required/>
     <br/><input type="email" name="email" placeholder="Email address (required. hashed and used for Gravatar only)" required/>
+    <br/><input type="text" name="special" placeholder="Human check. this website ends on dot.. what? 'com'? 'net'? (required)" required/>
     <br/><textarea rows="10" name="message" placeholder="Comment (required)" required></textarea>
     <button id="new-comment-submit" class="btn-ready" type="submit" value="Send">Submit</button>
 </form>
@@ -54,6 +55,7 @@ or whatever comment engine you want -> https://gohugo.io/content-management/comm
                   .replace('@date', date)
                   .replace('@name', data.Author)
                   .replace('@message', data.Message)
+                  .replace('@url', data.Link);
         let temp = document.createElement('template');
         temp.innerHTML = txt;
         container.appendChild(temp.content.firstElementChild);
