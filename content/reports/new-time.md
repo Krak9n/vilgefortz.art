@@ -18,13 +18,14 @@ F.e.: graphics programming, also don't forget about shaders; finally started tou
 
 Also I got very hooked on ricing, and making some cool tools for posting on r/unixporn. As of now have done only two complete rices, and made one pretty cute utility.
 
----------
-Wanted also to talk about future of this blog. I am not going to maintain it as frequently (lol) as I did. Apparently I will post some news here, but it won't be this often.
+---
+Wanted also to talk about future of this blog. I am not going to maintain it as frequently (lol) as I did. Apparently I will post some news here, but it won't be this often. <br />
 
-Anyways, if you will find yourself in a deep desire of talking/reaching to me, write on my email: olhnts12@proton.me, or on my discord: xezbeth45. 
-----------
+Anyways, if you will find yourself in a deep desire of talking/reaching to me, write on my email: olhnts12@proton.me, or on my discord: xezbeth45. <br />
 
-**So, what am I going to do now?**
+---
+**So, what am I going to do now?** 
+
 Well, first of all I am planning on finishing all my old projects, and moving forward. There is a lot of things to learn. 
 
 In the future I still hope to work more on videogames. But maybe I'll also include some audio stuff. 
