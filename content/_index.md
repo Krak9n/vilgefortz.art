@@ -7,16 +7,19 @@ type = 'homepage'
 
 hi there?
 
-if you’re here, it probably means you’re interested in me-how else would you have found me…
+if you’re here, it probably means you’re interested in me. how else would you have found me…
 
-anyway, i’m just a **simple** dude with way too many interests. ideally, i could be anything for ya-chat about any topic, whatever. here, on my blog, you’ll find my thoughts on programming, D&D, video games & the industry, music, politics, and a whole lot more.
+anyway, i’m just a **simple** dude with way too many interests to complete at least something. ideally, i could be anything for ya. 
+however as of some time i stopped posting anything. this is just a place for some thoughts... gonna have another site for storing my projects, and articles on shit.
+
+still, old articles will be here. :))
 
 hope we’ll find **our** language •⩊•
 
 --- 
 > To contact me via email ---> **olhnts12@proton.me**
 
-> Or my discord ---> **xezbeth45**
+> Or write on discord ---> **xezbeth45**
 ---
 
 ![eva](/images/789101.jpg)
