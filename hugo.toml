@@ -22,5 +22,5 @@ baseURL = "https://krak9n.github.io/vilgefortz.art/"
 theme = "terminal"
 relativeURLs = true
 canonifyURLs = true
-
+builddrafts = true
 
