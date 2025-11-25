@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aboutmes on</title><link>/aboutme/</link><description>Recent content in Aboutmes on</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Feb 2025 21:48:56 +0100</lastBuildDate><atom:link href="/aboutme/index.xml" rel="self" type="application/rss+xml"/><item><title>About me</title><link>/aboutme/aboutme/</link><pubDate>Fri, 14 Feb 2025 21:48:56 +0100</pubDate><guid>/aboutme/aboutme/</guid><description>&lt;p&gt;So, you wanna know more about me? Cool!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aboutmes on </title>
+    <link>/aboutme/</link>
+    <description>Recent content in Aboutmes on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 14 Feb 2025 21:48:56 +0100</lastBuildDate><atom:link href="/aboutme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>/aboutme/aboutme/</link>
+      <pubDate>Fri, 14 Feb 2025 21:48:56 +0100</pubDate>
+      
+      
+      <guid>/aboutme/aboutme/</guid>
+      
+      
+      <description>&lt;p&gt;So, you wanna know more about me? Cool!&lt;/p&gt;
 &lt;p&gt;Let’s begin!&lt;/p&gt;
 &lt;p&gt;I’m the kind of person &lt;del&gt;who loves diving into different interests—always curious, always exploring&lt;/del&gt;. But when it comes to mastering something… well, let’s just say I tend to jump to the next thing before finishing the last.&lt;/p&gt;
-&lt;p&gt;As a Linux user (more specifically, Arch Linux!!!), I love programming, especially low-level stuff with C and Assembly. What can I show you? Eh… nothing yet. I start projects with motivation, but finishing them? That’s a different story—I usually get distracted by a new one.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;As a Linux user (more specifically, Arch Linux!!!), I love programming, especially low-level stuff with C and Assembly. What can I show you? Eh… nothing yet. I start projects with motivation, but finishing them? That’s a different story—I usually get distracted by a new one.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
+
+
+
+
+
+ 
+  
