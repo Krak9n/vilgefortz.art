@@ -18,7 +18,7 @@
 
 
 
-baseURL = "https://krak9n.github.io/vilgefortz.art/"
+baseURL = "https://vilgefortz.art/"
 theme = "terminal"
 relativeURLs = true
 canonifyURLs = true
