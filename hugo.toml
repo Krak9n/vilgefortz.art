@@ -17,7 +17,7 @@
   buildDrafts = true
 
 
-baseURL = "https://vilgefortz.art/"
+baseURL = 'https://vilgefortz.art/'
 theme = "terminal"
 relativeURLs = true
 canonifyURLs = true
