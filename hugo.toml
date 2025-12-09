@@ -17,7 +17,6 @@
   buildDrafts = true
 
 
-
 baseURL = "https://vilgefortz.art/"
 theme = "terminal"
 relativeURLs = true
