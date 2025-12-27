@@ -186,17 +186,17 @@ In first few days i was able to firstly produce a black window and then getting 
 <p>My current code looks like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;glad/glad.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;GLFW/glfw3.h&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//#include &lt;math.h&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;cglm/cglm.h&#34;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;ft2build.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">FT_FREETYPE_H  </span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#define MAX_SIZE 100
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> integers
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> VBO[<span style="color:#ae81ff">2</span>], VAO[<span style="color:#ae81ff">2</span>];
@@ -209,29 +209,29 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>  ivec2 Size;
 </span></span><span style="display:flex;"><span>  ivec2 Bearing;
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> TextureID;  <span style="color:#75715e">// ID handle of the glyph texture
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> Advance;
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> Advance;
 </span></span><span style="display:flex;"><span>} cha;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> values_for_map
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> size; <span style="color:#75715e">// Current number of elements in the map
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">char</span> keys[MAX_SIZE][<span style="color:#ae81ff">100</span>]; <span style="color:#75715e">// Array to store the keys
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">int</span> values[MAX_SIZE]; 
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">char</span> keys[MAX_SIZE][<span style="color:#ae81ff">100</span>]; <span style="color:#75715e">// Array to store the keys
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> values[MAX_SIZE]; 
 </span></span><span style="display:flex;"><span>} f_map;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> first_triangle[] <span style="color:#f92672">=</span> 
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.5f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">1.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#75715e">// top
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">1.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#75715e">// bottom left
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#ae81ff">0.0f</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">1.0f</span>, <span style="color:#75715e">// bottom middle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+</span></span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">1.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#75715e">// bottom left
+</span></span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">0.0f</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">1.0f</span>, <span style="color:#75715e">// bottom middle
+</span></span></span><span style="display:flex;"><span>};
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> second_triangle[] <span style="color:#f92672">=</span> 
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.5f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">1.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#75715e">// top
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#ae81ff">0.2f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.5f</span>, <span style="color:#ae81ff">0.5f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#75715e">// bottom right
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#ae81ff">0.0f</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">1.0f</span>, <span style="color:#75715e">// bottom middle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+</span></span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">0.2f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.5f</span>, <span style="color:#ae81ff">0.5f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#75715e">// bottom right
+</span></span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">0.0f</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">0.0f</span>, <span style="color:#ae81ff">1.0f</span>, <span style="color:#75715e">// bottom middle
+</span></span></span><span style="display:flex;"><span>};
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">init_glfw</span>();
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">processInput</span>(GLFWwindow <span style="color:#f92672">*</span>window);
@@ -253,7 +253,7 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> SCR_WIDTH <span style="color:#f92672">=</span> <span style="color:#ae81ff">1080</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// will be used for making two colored backround
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> HALF_SCR_HEIGHT <span style="color:#f92672">=</span> SCR_HEIGHT <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> HALF_SCR_HEIGHT <span style="color:#f92672">=</span> SCR_HEIGHT <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> HALF_SCR_WIDTH <span style="color:#f92672">=</span> SCR_WIDTH <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>VshaderSource <span style="color:#f92672">=</span> 
@@ -298,11 +298,11 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;}</span><span style="color:#ae81ff">\n\0</span><span style="color:#e6db74">&#34;</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// the ﬁrst process of the graphics pipeline: the vertex shader. 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">init_glfw</span>();
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// change later
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span>  <span style="color:#75715e">/*
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">  ivec2 Size1 = GLM_IVEC2_ONE_INIT; 
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">  ivec2 Bearing1 = GLM_IVEC2_ONE_INIT;
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
@@ -310,7 +310,7 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">  memcpy(cha.Bearing, Bearing1, sizeof(Bearing1));
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">  */</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// --------------------------
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">double</span> xpos, ypos;
@@ -328,12 +328,12 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glfwSetInputMode</span>(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// to be notified when cursor moves over the window
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">glfwSetCursorPosCallback</span>(window, cursor_position_callback);
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glfwSetCursorPosCallback</span>(window, cursor_position_callback);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glfwSwapInterval</span>(<span style="color:#ae81ff">1</span>);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glfwSetCursorPos</span>(window, xpos, ypos);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// mouse cursor is not displayed
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// text isnt on screen. presented in kinsole tho
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>  <span style="color:#75715e">// text isnt on screen. presented in kinsole tho
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">gladLoadGLLoader</span>((GLADloadproc)glfwGetProcAddress))
 </span></span><span style="display:flex;"><span>  {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;failed to initialize glad</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
@@ -341,15 +341,15 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// generating vertex and fragment shaders
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">shader_get</span>();
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">shader_get</span>();
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//linking ones before
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">linking_shaders</span>();
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">linking_shaders</span>();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glGenVertexArrays</span>(<span style="color:#ae81ff">2</span>, INTs.VAO);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glGenBuffers</span>(<span style="color:#ae81ff">2</span>, INTs.VBO);
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// first triangle render
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">glBindVertexArray</span>(INTs.VAO[<span style="color:#ae81ff">0</span>]);
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glBindVertexArray</span>(INTs.VAO[<span style="color:#ae81ff">0</span>]);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glBindBuffer</span>(GL_ARRAY_BUFFER, INTs.VBO[<span style="color:#ae81ff">0</span>]);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glBufferData</span>(GL_ARRAY_BUFFER, <span style="color:#66d9ef">sizeof</span>(first_triangle), first_triangle, GL_STATIC_DRAW); 
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glVertexAttribPointer</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, GL_FLOAT, GL_FALSE, <span style="color:#ae81ff">6</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>), (<span style="color:#66d9ef">void</span><span style="color:#f92672">*</span>)<span style="color:#ae81ff">0</span>);
@@ -358,7 +358,7 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glEnableVertexAttribArray</span>(<span style="color:#ae81ff">1</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// second triangle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">glBindVertexArray</span>(INTs.VAO[<span style="color:#ae81ff">1</span>]);
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glBindVertexArray</span>(INTs.VAO[<span style="color:#ae81ff">1</span>]);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glBindBuffer</span>(GL_ARRAY_BUFFER, INTs.VBO[<span style="color:#ae81ff">1</span>]);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glBufferData</span>(GL_ARRAY_BUFFER, <span style="color:#66d9ef">sizeof</span>(second_triangle), second_triangle, GL_STATIC_DRAW);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glVertexAttribPointer</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, GL_FLOAT, GL_FALSE, <span style="color:#ae81ff">6</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>), (<span style="color:#66d9ef">void</span><span style="color:#f92672">*</span>)<span style="color:#ae81ff">0</span>);
@@ -368,10 +368,10 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glBindBuffer</span>(GL_ARRAY_BUFFER, <span style="color:#ae81ff">0</span>);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// glColorPointer(4, GL_FLOAT, 0, colors);
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* ------------------------------- */</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// getting text
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  FT_Library ft;
+</span></span></span><span style="display:flex;"><span>  FT_Library ft;
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">FT_Init_FreeType</span>(<span style="color:#f92672">&amp;</span>ft))
 </span></span><span style="display:flex;"><span>  {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;freetype error, could not init FreeType Library</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
@@ -393,17 +393,17 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>    } 
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glPixelStorei</span>(GL_UNPACK_ALIGNMENT, <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// disable byte-alignment restriction
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> c <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; c <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">128</span>; c<span style="color:#f92672">++</span>)
 </span></span><span style="display:flex;"><span>    {
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">// load character glyph 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">FT_Load_Char</span>(face, c, FT_LOAD_RENDER))
+</span></span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">FT_Load_Char</span>(face, c, FT_LOAD_RENDER))
 </span></span><span style="display:flex;"><span>      {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;ERROR::FREETYTPE: Failed to load Glyph</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">continue</span>;
 </span></span><span style="display:flex;"><span>      }
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">// generate texture
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> texture;
+</span></span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> texture;
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glGenTextures</span>(<span style="color:#ae81ff">1</span>, <span style="color:#f92672">&amp;</span>texture);
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glBindTexture</span>(GL_TEXTURE_2D, texture);
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glTexImage2D</span>(
@@ -418,16 +418,16 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>        face<span style="color:#f92672">-&gt;</span>glyph<span style="color:#f92672">-&gt;</span>bitmap.buffer
 </span></span><span style="display:flex;"><span>      );
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">// set texture options
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">glTexParameteri</span>(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+</span></span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glTexParameteri</span>(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glTexParameteri</span>(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glTexParameteri</span>(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glTexParameteri</span>(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">// now store character for later use
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      cha <span style="color:#f92672">=</span> {
+</span></span></span><span style="display:flex;"><span>      cha <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>        texture, 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// example of accessing
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        ivec2 Size1 <span style="color:#f92672">=</span> <span style="color:#a6e22e">GLM_IVEC2_ONE_INIT</span>(face<span style="color:#f92672">-&gt;</span>glyph<span style="color:#f92672">-&gt;</span>bitmap.width, face<span style="color:#f92672">-&gt;</span>glyph<span style="color:#f92672">-&gt;</span>bitmap.rows); 
+</span></span></span><span style="display:flex;"><span>        ivec2 Size1 <span style="color:#f92672">=</span> <span style="color:#a6e22e">GLM_IVEC2_ONE_INIT</span>(face<span style="color:#f92672">-&gt;</span>glyph<span style="color:#f92672">-&gt;</span>bitmap.width, face<span style="color:#f92672">-&gt;</span>glyph<span style="color:#f92672">-&gt;</span>bitmap.rows); 
 </span></span><span style="display:flex;"><span>        ivec2 Bearing1 <span style="color:#f92672">=</span> <span style="color:#a6e22e">GLM_IVEC2_ONE_INIT</span>(face<span style="color:#f92672">-&gt;</span>glyph<span style="color:#f92672">-&gt;</span>bitmap_left, face<span style="color:#f92672">-&gt;</span>glyph<span style="color:#f92672">-&gt;</span>bitmap_top);
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">memcpy</span>(cha.Size, Size1, <span style="color:#66d9ef">sizeof</span>(Size1));
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">memcpy</span>(cha.Bearing, Bearing1, <span style="color:#66d9ef">sizeof</span>(Bearing1));
@@ -436,11 +436,11 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>      };
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">//strcpy(val.key, cha);
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">// problem here
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">//insert(cha);
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">memcpy</span>(f_map.values, cha, <span style="color:#66d9ef">sizeof</span>(cha));
+</span></span></span><span style="display:flex;"><span>      <span style="color:#75715e">// problem here
+</span></span></span><span style="display:flex;"><span>      <span style="color:#75715e">//insert(cha);
+</span></span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">memcpy</span>(f_map.values, cha, <span style="color:#66d9ef">sizeof</span>(cha));
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">//Characters.insert(std::pair&lt;char, Character&gt;(c, character));
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">while</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">glfwWindowShouldClose</span>(window))
@@ -448,18 +448,18 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">processInput</span>(window);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// change in the future to white VBO
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// background of the top part
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">glClearColor</span>(<span style="color:#ae81ff">0.9f</span>, <span style="color:#ae81ff">0.7f</span>, <span style="color:#ae81ff">0.8f</span>, <span style="color:#ae81ff">0.5f</span>);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#75715e">// background of the top part
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glClearColor</span>(<span style="color:#ae81ff">0.9f</span>, <span style="color:#ae81ff">0.7f</span>, <span style="color:#ae81ff">0.8f</span>, <span style="color:#ae81ff">0.5f</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// background of the bottom part
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">glClear</span>(GL_COLOR_BUFFER_BIT);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glClear</span>(GL_COLOR_BUFFER_BIT);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// left triangle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">glUseProgram</span>(INTs.shaderProgram);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glUseProgram</span>(INTs.shaderProgram);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glBindVertexArray</span>(INTs.VAO[<span style="color:#ae81ff">0</span>]);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glDrawArrays</span>(GL_TRIANGLES, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// right triangle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">glUseProgram</span>(INTs.shaderProgramSecondTriangle);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glUseProgram</span>(INTs.shaderProgramSecondTriangle);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glBindVertexArray</span>(INTs.VAO[<span style="color:#ae81ff">1</span>]);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glDrawArrays</span>(GL_TRIANGLES, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>);
 </span></span><span style="display:flex;"><span>    
@@ -478,21 +478,21 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">shader_get</span>()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// vertex shader
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  INTs.Vshader <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateShader</span>(GL_VERTEX_SHADER);
+</span></span></span><span style="display:flex;"><span>  INTs.Vshader <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateShader</span>(GL_VERTEX_SHADER);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glShaderSource</span>(INTs.Vshader, <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&amp;</span>VshaderSource, NULL);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glCompileShader</span>(INTs.Vshader);
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> success;
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">char</span> infoLog[<span style="color:#ae81ff">512</span>];
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glGetShaderiv</span>(INTs.Vshader, GL_COMPILE_STATUS, <span style="color:#f92672">&amp;</span>success);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// checks for errors while compiling
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>success)
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>success)
 </span></span><span style="display:flex;"><span>  {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glGetShaderInfoLog</span>(INTs.Vshader, <span style="color:#ae81ff">512</span>, NULL, infoLog);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;error while compiling vertex shader %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, infoLog);
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// fragment shader
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  INTs.Fshader <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateShader</span>(GL_FRAGMENT_SHADER);
+</span></span></span><span style="display:flex;"><span>  INTs.Fshader <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateShader</span>(GL_FRAGMENT_SHADER);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glShaderSource</span>(INTs.Fshader, <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&amp;</span>FshaderSource, NULL);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glCompileShader</span>(INTs.Fshader);
 </span></span><span style="display:flex;"><span> 
@@ -504,13 +504,13 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span> 
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// vertex shader for the second triangle 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  INTs.VshaderSecond <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateShader</span>(GL_VERTEX_SHADER);
+</span></span></span><span style="display:flex;"><span>  INTs.VshaderSecond <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateShader</span>(GL_VERTEX_SHADER);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glShaderSource</span>(INTs.VshaderSecond, <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&amp;</span>VshaderSecondSource, NULL);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glCompileShader</span>(INTs.VshaderSecond);
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glGetShaderiv</span>(INTs.VshaderSecond, GL_COMPILE_STATUS, <span style="color:#f92672">&amp;</span>success);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// checks for errors while compiling
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>success)
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>success)
 </span></span><span style="display:flex;"><span>  {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">glGetShaderInfoLog</span>(INTs.Vshader, <span style="color:#ae81ff">512</span>, NULL, infoLog);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;error while compiling vertex shader %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, infoLog);
@@ -518,7 +518,7 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// fragment shader for the second triangle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  INTs.FshaderSecond <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateShader</span>(GL_FRAGMENT_SHADER);
+</span></span></span><span style="display:flex;"><span>  INTs.FshaderSecond <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateShader</span>(GL_FRAGMENT_SHADER);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glShaderSource</span>(INTs.FshaderSecond, <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&amp;</span>FshaderSecondSource, NULL);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glCompileShader</span>(INTs.FshaderSecond);
 </span></span><span style="display:flex;"><span>  
@@ -534,36 +534,36 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">linking_shaders</span>()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// for the first triangle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">shader_get</span>();
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">shader_get</span>();
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> success;
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">char</span> infoLog[<span style="color:#ae81ff">512</span>];
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// linking shaders 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  INTs.shaderProgram <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateProgram</span>();
+</span></span></span><span style="display:flex;"><span>  INTs.shaderProgram <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateProgram</span>();
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glAttachShader</span>(INTs.shaderProgram, INTs.Vshader);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glAttachShader</span>(INTs.shaderProgram, INTs.Fshader);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glLinkProgram</span>(INTs.shaderProgram);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// checks for the errors while linking shaders   
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">glGetProgramiv</span>(INTs.shaderProgram, GL_LINK_STATUS, <span style="color:#f92672">&amp;</span>success);
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glGetProgramiv</span>(INTs.shaderProgram, GL_LINK_STATUS, <span style="color:#f92672">&amp;</span>success);
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>success) {
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glGetProgramInfoLog</span>(INTs.shaderProgram, <span style="color:#ae81ff">512</span>, NULL, infoLog);
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;error while linking %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, infoLog);
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// for the second triangle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  INTs.shaderProgramSecondTriangle <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateProgram</span>();
+</span></span></span><span style="display:flex;"><span>  INTs.shaderProgramSecondTriangle <span style="color:#f92672">=</span> <span style="color:#a6e22e">glCreateProgram</span>();
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glAttachShader</span>(INTs.shaderProgramSecondTriangle, INTs.VshaderSecond);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glAttachShader</span>(INTs.shaderProgramSecondTriangle, INTs.FshaderSecond);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glLinkProgram</span>(INTs.shaderProgramSecondTriangle);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// checks for the errors while linking shaders
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">glGetProgramiv</span>(INTs.shaderProgramSecondTriangle, GL_LINK_STATUS, <span style="color:#f92672">&amp;</span>success);
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glGetProgramiv</span>(INTs.shaderProgramSecondTriangle, GL_LINK_STATUS, <span style="color:#f92672">&amp;</span>success);
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>success) {
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">glGetProgramInfoLog</span>(INTs.shaderProgramSecondTriangle, <span style="color:#ae81ff">512</span>, NULL, infoLog);
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;error while linking %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, infoLog);
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// also could add some checking for errors while compiling but anyway xDDD
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// deleting shaders &#39;cause those were already linked
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">glDeleteShader</span>(INTs.Vshader);
+</span></span></span><span style="display:flex;"><span>  <span style="color:#75715e">// deleting shaders &#39;cause those were already linked
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glDeleteShader</span>(INTs.Vshader);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glDeleteShader</span>(INTs.Fshader);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glDeleteShader</span>(INTs.VshaderSecond);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glDeleteShader</span>(INTs.FshaderSecond);
@@ -571,7 +571,7 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// return here 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">cursor_position_callback</span>(GLFWwindow<span style="color:#f92672">*</span> window, <span style="color:#66d9ef">double</span> xpos, <span style="color:#66d9ef">double</span> ypos)
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">cursor_position_callback</span>(GLFWwindow<span style="color:#f92672">*</span> window, <span style="color:#66d9ef">double</span> xpos, <span style="color:#66d9ef">double</span> ypos)
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">glfwGetCursorPos</span>(window, <span style="color:#f92672">&amp;</span>xpos, <span style="color:#f92672">&amp;</span>ypos);
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;mouse position is,</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">x: %lf</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">y: %lf</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, xpos, ypos);
@@ -600,7 +600,7 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to get the index of a key in the keys array
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getIndex</span>(<span style="color:#66d9ef">char</span> key[])
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getIndex</span>(<span style="color:#66d9ef">char</span> key[])
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> f_map.size; i<span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">strcmp</span>(f_map.keys[i], key) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
@@ -608,36 +608,36 @@ In first few days i was able to firstly produce a black window and then getting 
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>; <span style="color:#75715e">// Key not found
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to insert a key-value pair into the map
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insert</span>(<span style="color:#66d9ef">char</span> key[], <span style="color:#66d9ef">int</span> value)
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insert</span>(<span style="color:#66d9ef">char</span> key[], <span style="color:#66d9ef">int</span> value)
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> index <span style="color:#f92672">=</span> <span style="color:#a6e22e">getIndex</span>(key);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (index <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) { <span style="color:#75715e">// Key not found
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">strcpy</span>(f_map.keys[f_map.size], key);
+</span></span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">strcpy</span>(f_map.keys[f_map.size], key);
 </span></span><span style="display:flex;"><span>        f_map.values[f_map.size] <span style="color:#f92672">=</span> value;
 </span></span><span style="display:flex;"><span>        f_map.size<span style="color:#f92672">++</span>;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> { <span style="color:#75715e">// Key found
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        f_map.values[index] <span style="color:#f92672">=</span> value;
+</span></span></span><span style="display:flex;"><span>        f_map.values[index] <span style="color:#f92672">=</span> value;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to get the value of a key in the map
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">get</span>(<span style="color:#66d9ef">char</span> key[])
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">get</span>(<span style="color:#66d9ef">char</span> key[])
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> index <span style="color:#f92672">=</span> <span style="color:#a6e22e">getIndex</span>(key);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (index <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) { <span style="color:#75715e">// Key not found
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+</span></span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> { <span style="color:#75715e">// Key found
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> f_map.values[index];
+</span></span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> f_map.values[index];
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to print the map
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printMap</span>()
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printMap</span>()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> f_map.size; i<span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%s: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, f_map.keys[i], f_map.values[i]);
@@ -696,7 +696,7 @@ If you have any suggestions on how to solve my current strugles, please contact 
             </div>
 
             <div class="footer__content">
-                <p>© 2025 vilgefortz.art – All rights reserved.</p>
+                <p>© 2025-2026 vilgefortz.art – All rights reserved.</p>
                 <p>Made with ❤️ and a bit of chaos.</p>
             </div>
         </div>
